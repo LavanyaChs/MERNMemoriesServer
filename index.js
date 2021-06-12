@@ -14,7 +14,6 @@ app.use('/posts', postRoutes);
 app.get('/', (req, res) => {
     res.send('Hello! This is Memories API.')
 })
-// const CONNECTION_URL = `mongodb+srv://lavanyachs:atlas0lavanyachs@cluster0.c7gfo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const PORT = process.env.PORT || 5000;
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
